@@ -1,0 +1,7132 @@
+{
+  "submissions": [
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8fc"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "code": "// Alice solution",
+      "language": "C++",
+      "verdict": "Accepted",
+      "executionTime": 45,
+      "memoryUsed": 6,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "createdAt": {
+        "$date": "2026-07-04T16:56:25.259Z"
+      },
+      "runOutputs": [],
+      "__v": 0,
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.263Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8fd"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "# Alice python solution",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 72,
+      "memoryUsed": 14,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "createdAt": {
+        "$date": "2026-07-04T17:26:25.259Z"
+      },
+      "runOutputs": [],
+      "__v": 0,
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.263Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8fe"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "code": "// Alice Java solution",
+      "language": "Java",
+      "verdict": "Wrong Answer",
+      "executionTime": 120,
+      "memoryUsed": 42,
+      "testCasesPassedCount": 15,
+      "isRunOnly": false,
+      "customInput": null,
+      "createdAt": {
+        "$date": "2026-07-04T17:56:25.259Z"
+      },
+      "runOutputs": [],
+      "__v": 0,
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.263Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8ff"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "code": "// Alice Java solution (fixed)",
+      "language": "Java",
+      "verdict": "Accepted",
+      "executionTime": 110,
+      "memoryUsed": 43,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "createdAt": {
+        "$date": "2026-07-04T18:26:25.259Z"
+      },
+      "runOutputs": [],
+      "__v": 0,
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.263Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d900"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7da"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "code": "# Bob Python",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 85,
+      "memoryUsed": 15,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "createdAt": {
+        "$date": "2026-07-04T15:56:25.259Z"
+      },
+      "runOutputs": [],
+      "__v": 0,
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.263Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d901"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7dc"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "// Charlie solution",
+      "language": "C++",
+      "verdict": "Accepted",
+      "executionTime": 32,
+      "memoryUsed": 5,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "createdAt": {
+        "$date": "2026-07-04T14:56:25.259Z"
+      },
+      "runOutputs": [],
+      "__v": 0,
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.263Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a49587663e2538e64c6a356"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1833,
+      "memoryUsed": 13,
+      "testCasesPassedCount": 25,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-04T19:01:10.709Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:01:42.920Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4958a71f99700ef289060e"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1976,
+      "memoryUsed": 16,
+      "testCasesPassedCount": 25,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-04T19:01:59.097Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:02:31.807Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4958f5cb19e6926746c801"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Pending",
+      "executionTime": 0,
+      "memoryUsed": 0,
+      "testCasesPassedCount": 0,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-04T19:03:17.556Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:03:17.556Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a49594082aa0f23f66f5e2f"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1010,
+      "memoryUsed": 15,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4959430b3ca1c5e3650031"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4959430b3ca1c5e3650032"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4959430b3ca1c5e3650033"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-04T19:04:32.530Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:04:35.450Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a49594382aa0f23f66f5e3e"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1005,
+      "memoryUsed": 14,
+      "testCasesPassedCount": 1,
+      "isRunOnly": true,
+      "customInput": "abcdeedcba",
+      "runOutputs": [
+        {
+          "input": "abcdeedcba",
+          "expectedOutput": "N/A (Custom Input)",
+          "userOutput": "true",
+          "verdict": "Success",
+          "error": "",
+          "_id": {
+            "$oid": "6a4959440b3ca1c5e3650037"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-04T19:04:35.616Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:04:36.634Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a49594582aa0f23f66f5e49"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1679,
+      "memoryUsed": 12,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-04T19:04:37.163Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:05:04.783Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a49596b6724f17b14b994a0"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1328,
+      "memoryUsed": 16,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a49596e0b3ca1c5e3650042"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a49596e0b3ca1c5e3650043"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a49596e0b3ca1c5e3650044"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-04T19:05:15.026Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:05:18.344Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a49596f6724f17b14b994b2"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1004,
+      "memoryUsed": 12,
+      "testCasesPassedCount": 1,
+      "isRunOnly": true,
+      "customInput": "abcdeedcba",
+      "runOutputs": [
+        {
+          "input": "abcdeedcba",
+          "expectedOutput": "N/A (Custom Input)",
+          "userOutput": "true",
+          "verdict": "Success",
+          "error": "",
+          "_id": {
+            "$oid": "6a4959700b3ca1c5e3650048"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-04T19:05:19.621Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:05:20.637Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4959716724f17b14b994bd"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1619,
+      "memoryUsed": 16,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-04T19:05:21.190Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:05:48.446Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a495d654eadbf6772230180"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1414,
+      "memoryUsed": 16,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a495d690b3ca1c5e3650053"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a495d690b3ca1c5e3650054"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a495d690b3ca1c5e3650055"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-04T19:22:13.837Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:22:17.954Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a495d6a4eadbf6772230192"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1151,
+      "memoryUsed": 12,
+      "testCasesPassedCount": 1,
+      "isRunOnly": true,
+      "customInput": "abcdeedcba",
+      "runOutputs": [
+        {
+          "input": "abcdeedcba",
+          "expectedOutput": "N/A (Custom Input)",
+          "userOutput": "true",
+          "verdict": "Success",
+          "error": "",
+          "_id": {
+            "$oid": "6a495d6b0b3ca1c5e3650059"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-04T19:22:18.426Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:22:19.586Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a495d6b4eadbf677223019d"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "TLE",
+      "executionTime": 2286,
+      "memoryUsed": 15,
+      "testCasesPassedCount": 2,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-04T19:22:19.991Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:22:24.837Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a495da2e31c91417f4c109c"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 283,
+      "memoryUsed": 15,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a495da730fc225a0de4d7ee"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a495da730fc225a0de4d7ef"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a495da730fc225a0de4d7f0"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-04T19:23:14.930Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:23:19.162Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a495da7e31c91417f4c10ae"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 2,
+      "memoryUsed": 14,
+      "testCasesPassedCount": 1,
+      "isRunOnly": true,
+      "customInput": "abcdeedcba",
+      "runOutputs": [
+        {
+          "input": "abcdeedcba",
+          "expectedOutput": "N/A (Custom Input)",
+          "userOutput": "true",
+          "verdict": "Success",
+          "error": "",
+          "_id": {
+            "$oid": "6a495da830fc225a0de4d7f4"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-04T19:23:19.623Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:23:20.895Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a495da9e31c91417f4c10b9"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 231,
+      "memoryUsed": 12,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-04T19:23:21.166Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:23:50.139Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4960f5e31c91417f4c1101"
+      },
+      "userId": {
+        "$oid": "6a495c5b4eadbf6772230176"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "# Write your solution here\nimport sys\n\ndef solve(text):\n    clean_text = str(text).lower()\n    return clean_text == clean_text[::-1]\n    pass\n\nif __name__ == '__main__':\n    text = input()\n    print(solve(text))\n",
+      "language": "Python",
+      "verdict": "Wrong Answer",
+      "executionTime": 189,
+      "memoryUsed": 14,
+      "testCasesPassedCount": 0,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "True",
+          "verdict": "Wrong Answer",
+          "error": "",
+          "_id": {
+            "$oid": "6a4960fa30fc225a0de4d7ff"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "False",
+          "verdict": "Wrong Answer",
+          "error": "",
+          "_id": {
+            "$oid": "6a4960fa30fc225a0de4d800"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "True",
+          "verdict": "Wrong Answer",
+          "error": "",
+          "_id": {
+            "$oid": "6a4960fa30fc225a0de4d801"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-04T19:37:25.542Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:37:30.141Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a496132e31c91417f4c1104"
+      },
+      "userId": {
+        "$oid": "6a495c5b4eadbf6772230176"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "# Write your solution here\nimport sys\n\ndef solve(text):\n    clean_text = str(text).lower()\n    return clean_text == clean_text[::-1]\n    pass\n\nif __name__ == '__main__':\n    text = input()\n    if(solve(text)):\n        print(\"true\")\n    else:\n        print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 149,
+      "memoryUsed": 15,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a49613630fc225a0de4d806"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a49613630fc225a0de4d807"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a49613630fc225a0de4d808"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-04T19:38:26.075Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:38:30.469Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a49613be31c91417f4c1108"
+      },
+      "userId": {
+        "$oid": "6a495c5b4eadbf6772230176"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "# Write your solution here\nimport sys\n\ndef solve(text):\n    clean_text = str(text).lower()\n    return clean_text == clean_text[::-1]\n    pass\n\nif __name__ == '__main__':\n    text = input()\n    if(solve(text)):\n        print(\"true\")\n    else:\n        print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 759,
+      "memoryUsed": 13,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-04T19:38:35.829Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:39:14.451Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a496351ab65521dfd57ff45"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 164,
+      "memoryUsed": 14,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a496355f2c426add1fd832f"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a496355f2c426add1fd8330"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a496355f2c426add1fd8331"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-04T19:47:29.412Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:47:33.444Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a496356ab65521dfd57ff61"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "print(\"always_wrong\")",
+      "language": "Python",
+      "verdict": "Wrong Answer",
+      "executionTime": 2,
+      "memoryUsed": 15,
+      "testCasesPassedCount": 0,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "always_wrong",
+          "verdict": "Wrong Answer",
+          "error": "",
+          "_id": {
+            "$oid": "6a496357f2c426add1fd8336"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-04T19:47:34.135Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:47:35.409Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a496357ab65521dfd57ff78"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 85,
+      "memoryUsed": 15,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-04T19:47:35.722Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:48:04.847Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a49c0faab65521dfd57fffe"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 74,
+      "memoryUsed": 13,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a49c0fef2c426add1fd8343"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a49c0fef2c426add1fd8344"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a49c0fef2c426add1fd8345"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T02:27:06.869Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T02:27:10.766Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a49c0ffab65521dfd58001d"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "print(\"always_wrong\")",
+      "language": "Python",
+      "verdict": "Wrong Answer",
+      "executionTime": 2,
+      "memoryUsed": 16,
+      "testCasesPassedCount": 0,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "always_wrong",
+          "verdict": "Wrong Answer",
+          "error": "",
+          "_id": {
+            "$oid": "6a49c100f2c426add1fd834a"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T02:27:11.503Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T02:27:12.700Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a49c10bc28a87fa7ca73c73"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 2,
+      "memoryUsed": 14,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a49c10ff2c426add1fd8351"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a49c10ff2c426add1fd8352"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a49c10ff2c426add1fd8353"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T02:27:23.937Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T02:27:27.594Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a49c110c28a87fa7ca73c95"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "print(\"always_wrong\")",
+      "language": "Python",
+      "verdict": "Wrong Answer",
+      "executionTime": 2,
+      "memoryUsed": 13,
+      "testCasesPassedCount": 0,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "always_wrong",
+          "verdict": "Wrong Answer",
+          "error": "",
+          "_id": {
+            "$oid": "6a49c111f2c426add1fd8358"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T02:27:28.567Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T02:27:29.663Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a49c112c28a87fa7ca73cb2"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 548,
+      "memoryUsed": 14,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-05T02:27:30.151Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T02:28:04.572Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4a6762e18370f0be6f6db8"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 959,
+      "memoryUsed": 16,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a6768dd1b3abf3b644e41"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a6768dd1b3abf3b644e42"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a6768dd1b3abf3b644e43"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:17:06.265Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:17:12.714Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a676ae18370f0be6f6de3"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "print(\"always_wrong\")",
+      "language": "Python",
+      "verdict": "Wrong Answer",
+      "executionTime": 1047,
+      "memoryUsed": 12,
+      "testCasesPassedCount": 0,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "always_wrong",
+          "verdict": "Wrong Answer",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a676cdd1b3abf3b644e48"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:17:14.032Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:17:16.627Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a676de18370f0be6f6e06"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1161,
+      "memoryUsed": 14,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-05T14:17:17.210Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:18:02.796Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4a67a9b32e54bcb97c7bed"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 52,
+      "memoryUsed": 14,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a67addd1b3abf3b644e55"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a67addd1b3abf3b644e56"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a67addd1b3abf3b644e57"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:18:17.528Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:18:21.712Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a67aeb32e54bcb97c7c15"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "print(\"always_wrong\")",
+      "language": "Python",
+      "verdict": "Wrong Answer",
+      "executionTime": 2,
+      "memoryUsed": 15,
+      "testCasesPassedCount": 0,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "always_wrong",
+          "verdict": "Wrong Answer",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a67afdd1b3abf3b644e5c"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:18:22.210Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:18:23.677Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a67afb32e54bcb97c7c38"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 427,
+      "memoryUsed": 12,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-05T14:18:23.817Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:18:58.224Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4a67d2b32e54bcb97c7c9a"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": null,
+      "code": "import sys\nprint(\"Playground stdout: \" + sys.stdin.read().strip())\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 2,
+      "memoryUsed": 16,
+      "testCasesPassedCount": 1,
+      "isRunOnly": true,
+      "customInput": "custom playground input",
+      "runOutputs": [
+        {
+          "input": "custom playground input",
+          "expectedOutput": "N/A (Custom Input)",
+          "userOutput": "Playground stdout: custom playground input",
+          "verdict": "Success",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a67d4dd1b3abf3b644e67"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:18:58.870Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:19:00.329Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a69af7a9cd8025c1ebdcd"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1205,
+      "memoryUsed": 15,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a69b7dd1b3abf3b644e6c"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a69b7dd1b3abf3b644e6d"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a69b7dd1b3abf3b644e6e"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:26:55.938Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:27:03.830Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a69b97a9cd8025c1ebe01"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "print(\"always_wrong\")",
+      "language": "Python",
+      "verdict": "Wrong Answer",
+      "executionTime": 1473,
+      "memoryUsed": 16,
+      "testCasesPassedCount": 0,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "always_wrong",
+          "verdict": "Wrong Answer",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a69bcdd1b3abf3b644e73"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:27:05.284Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:27:08.281Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a69bc7a9cd8025c1ebe2a"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "TLE",
+      "executionTime": 8565,
+      "memoryUsed": 14,
+      "testCasesPassedCount": 0,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "TLE",
+          "error": "Time Limit Exceeded",
+          "_id": {
+            "$oid": "6a4a69c6dd1b3abf3b644e7a"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:27:08.684Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:27:18.906Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a69cd7a9cd8025c1ebe66"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 2681,
+      "memoryUsed": 16,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a69d7dd1b3abf3b644e81"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a69d7dd1b3abf3b644e82"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a69d7dd1b3abf3b644e83"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:27:25.493Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:27:35.205Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a69d87a9cd8025c1ebea2"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "print(\"always_wrong\")",
+      "language": "Python",
+      "verdict": "Wrong Answer",
+      "executionTime": 1012,
+      "memoryUsed": 14,
+      "testCasesPassedCount": 0,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "always_wrong",
+          "verdict": "Wrong Answer",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a69dadd1b3abf3b644e88"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:27:36.356Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:27:38.902Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a6a004ead9c6be0ed0ade"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 4602,
+      "memoryUsed": 16,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a6a0ddd1b3abf3b644e8f"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a6a0ddd1b3abf3b644e90"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a6a0ddd1b3abf3b644e91"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:28:16.516Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:28:29.959Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a6a0e4ead9c6be0ed0b23"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "print(\"always_wrong\")",
+      "language": "Python",
+      "verdict": "Wrong Answer",
+      "executionTime": 1573,
+      "memoryUsed": 13,
+      "testCasesPassedCount": 0,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "always_wrong",
+          "verdict": "Wrong Answer",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a6a11dd1b3abf3b644e96"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:28:30.615Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:28:33.797Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a6a134ead9c6be0ed0b56"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 3726,
+      "memoryUsed": 13,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-05T14:28:35.313Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:29:35.988Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4a6a68ab63e21fe0ec8f45"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 777,
+      "memoryUsed": 16,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a6a6edd1b3abf3b644ea3"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a6a6edd1b3abf3b644ea4"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a6a6edd1b3abf3b644ea5"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:30:00.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:30:06.568Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a6a6fab63e21fe0ec8f7f"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "print(\"always_wrong\")",
+      "language": "Python",
+      "verdict": "Wrong Answer",
+      "executionTime": 693,
+      "memoryUsed": 12,
+      "testCasesPassedCount": 0,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "always_wrong",
+          "verdict": "Wrong Answer",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a6a72dd1b3abf3b644eaa"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:30:07.904Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:30:10.126Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a6a73ab63e21fe0ec8fb1"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1154,
+      "memoryUsed": 14,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-05T14:30:11.050Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:30:56.425Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4a6aa0ab63e21fe0ec9033"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": null,
+      "code": "import sys\nprint(\"Playground stdout: \" + sys.stdin.read().strip())\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 1256,
+      "memoryUsed": 12,
+      "testCasesPassedCount": 1,
+      "isRunOnly": true,
+      "customInput": "custom playground input",
+      "runOutputs": [
+        {
+          "input": "custom playground input",
+          "expectedOutput": "N/A (Custom Input)",
+          "userOutput": "Playground stdout: custom playground input",
+          "verdict": "Success",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a6aa3dd1b3abf3b644eb5"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T14:30:56.935Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:30:59.700Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a7309b9153eebaa4bbf44"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 457,
+      "memoryUsed": 13,
+      "testCasesPassedCount": 3,
+      "isRunOnly": true,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a730ddd1b3abf3b644eba"
+          }
+        },
+        {
+          "input": "hello",
+          "expectedOutput": "false",
+          "userOutput": "false",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a730ddd1b3abf3b644ebb"
+          }
+        },
+        {
+          "input": "a",
+          "expectedOutput": "true",
+          "userOutput": "true",
+          "verdict": "Accepted",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a730ddd1b3abf3b644ebc"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T15:06:49.049Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T15:06:53.669Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a730fb9153eebaa4bbf7d"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "print(\"always_wrong\")",
+      "language": "Python",
+      "verdict": "Wrong Answer",
+      "executionTime": 2,
+      "memoryUsed": 16,
+      "testCasesPassedCount": 0,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [
+        {
+          "input": "racecar",
+          "expectedOutput": "true",
+          "userOutput": "always_wrong",
+          "verdict": "Wrong Answer",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a7310dd1b3abf3b644ec1"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T15:06:55.232Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T15:06:56.541Z"
+      },
+      "__v": 1
+    },
+    {
+      "_id": {
+        "$oid": "6a4a7310b9153eebaa4bbfae"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "code": "import sys\ns = sys.stdin.read().strip()\nif s == s[::-1]:\n    print(\"true\")\nelse:\n    print(\"false\")\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 497,
+      "memoryUsed": 12,
+      "testCasesPassedCount": 25,
+      "isRunOnly": false,
+      "customInput": null,
+      "runOutputs": [],
+      "createdAt": {
+        "$date": "2026-07-05T15:06:56.822Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T15:07:36.764Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4a733ab9153eebaa4bc029"
+      },
+      "userId": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "problemId": null,
+      "code": "import sys\nprint(\"Playground stdout: \" + sys.stdin.read().strip())\n",
+      "language": "Python",
+      "verdict": "Accepted",
+      "executionTime": 287,
+      "memoryUsed": 12,
+      "testCasesPassedCount": 1,
+      "isRunOnly": true,
+      "customInput": "custom playground input",
+      "runOutputs": [
+        {
+          "input": "custom playground input",
+          "expectedOutput": "N/A (Custom Input)",
+          "userOutput": "Playground stdout: custom playground input",
+          "verdict": "Success",
+          "error": "",
+          "_id": {
+            "$oid": "6a4a733bdd1b3abf3b644ecc"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2026-07-05T15:07:38.081Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T15:07:39.983Z"
+      },
+      "__v": 1
+    }
+  ],
+  "problems": [
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "title": "Two Sum",
+      "statement": "Given an array of integers 'nums' and an integer 'target', return indices of the two numbers such that they add up to 'target'.\nYou may assume that each input would have exactly one solution, and you may not use the same element twice.\nYou can return the answer in any order.\n\nInput Format:\n- First line: N (size of array)\n- Second line: N space-separated integers representing the array elements.\n- Third line: Target integer.\n\nOutput Format:\n- Print two space-separated indices.",
+      "difficulty": "Easy",
+      "tags": [
+        "Arrays",
+        "Hash-Table"
+      ],
+      "timeLimit": 3000,
+      "memoryLimit": 256,
+      "sampleInput": "4\n2 7 11 15\n9",
+      "sampleOutput": "0 1",
+      "constraints": "2 <= nums.length <= 10^4\n-10^9 <= nums[i] <= 10^9\n-10^9 <= target <= 10^9",
+      "solutionsCount": 12,
+      "attemptsCount": 15,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.111Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.111Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "title": "Palindrome Check",
+      "statement": "Determine whether a given string S is a palindrome (reads the same backwards as forwards).\n\nInput Format:\n- A single line containing string S.\n\nOutput Format:\n- Print 'true' if the string is a palindrome, otherwise print 'false'.",
+      "difficulty": "Easy",
+      "tags": [
+        "Strings",
+        "Two-Pointers"
+      ],
+      "timeLimit": 2000,
+      "memoryLimit": 256,
+      "sampleInput": "racecar",
+      "sampleOutput": "true",
+      "constraints": "1 <= S.length <= 10^5\nString consists of lowercase English characters.",
+      "solutionsCount": 11,
+      "attemptsCount": 35,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.131Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T15:06:56.819Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "title": "Fibonacci Number",
+      "statement": "Calculate the N-th Fibonacci number.\nThe Fibonacci sequence starts with F(0) = 0 and F(1) = 1.\nEach subsequent term is the sum of the preceding two terms: F(N) = F(N-1) + F(N-2).\n\nInput Format:\n- A single line containing an integer N.\n\nOutput Format:\n- Print the N-th Fibonacci number.",
+      "difficulty": "Medium",
+      "tags": [
+        "DP",
+        "Math"
+      ],
+      "timeLimit": 2000,
+      "memoryLimit": 256,
+      "sampleInput": "6",
+      "sampleOutput": "8",
+      "constraints": "0 <= N <= 30",
+      "solutionsCount": 7,
+      "attemptsCount": 9,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.144Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.144Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "title": "Binary Search",
+      "statement": "Given a sorted array of N integers and a target value, return the index of the target if it exists in the array. If it does not exist, return -1.\nYou must write an algorithm with O(log N) runtime complexity.\n\nInput Format:\n- First line: N (size of array) and Target, separated by space.\n- Second line: N sorted space-separated integers.\n\nOutput Format:\n- Print the 0-based index of the Target if found, otherwise print -1.",
+      "difficulty": "Medium",
+      "tags": [
+        "Searching",
+        "Arrays"
+      ],
+      "timeLimit": 2000,
+      "memoryLimit": 256,
+      "sampleInput": "5 7\n1 3 5 7 9",
+      "sampleOutput": "3",
+      "constraints": "1 <= N <= 10^5\n-10^9 <= target, array[i] <= 10^9",
+      "solutionsCount": 6,
+      "attemptsCount": 8,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.155Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.155Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "title": "Longest Common Subsequence",
+      "statement": "Given two strings text1 and text2, return the length of their longest common subsequence.\nA subsequence of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.\n\nInput Format:\n- First line: string text1.\n- Second line: string text2.\n\nOutput Format:\n- Print the length of the longest common subsequence.",
+      "difficulty": "Hard",
+      "tags": [
+        "DP",
+        "Strings"
+      ],
+      "timeLimit": 4000,
+      "memoryLimit": 256,
+      "sampleInput": "abcde\nace",
+      "sampleOutput": "3",
+      "constraints": "1 <= text1.length, text2.length <= 1000\nStrings consist of lowercase English characters only.",
+      "solutionsCount": 2,
+      "attemptsCount": 5,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.169Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.169Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "title": "Merge K Sorted Lists",
+      "statement": "Merge K sorted linked lists and return it as one sorted list.\n\nInput Format:\n- First line: K (number of sorted lists).\n- Next K lines: Each line starts with list size M, followed by M space-separated sorted integers.\n\nOutput Format:\n- Print the merged sorted list of integers separated by spaces.",
+      "difficulty": "Hard",
+      "tags": [
+        "Heaps",
+        "Divide-and-Conquer"
+      ],
+      "timeLimit": 5000,
+      "memoryLimit": 256,
+      "sampleInput": "3\n3 1 4 5\n3 1 3 4\n2 2 6",
+      "sampleOutput": "1 1 2 3 4 4 5 6",
+      "constraints": "0 <= K <= 10^4\n0 <= M <= 500",
+      "solutionsCount": 2,
+      "attemptsCount": 4,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.182Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.182Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "title": "N-Queens",
+      "statement": "The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.\nGiven an integer n, return the number of distinct solutions.\n\nInput Format:\n- A single line containing integer n.\n\nOutput Format:\n- Print the count of distinct placements.",
+      "difficulty": "Hard",
+      "tags": [
+        "Backtracking"
+      ],
+      "timeLimit": 5000,
+      "memoryLimit": 256,
+      "sampleInput": "4",
+      "sampleOutput": "2",
+      "constraints": "1 <= n <= 9",
+      "solutionsCount": 1,
+      "attemptsCount": 3,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.190Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.190Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "title": "Graph Coloring",
+      "statement": "Given an undirected graph and a number of colors M, determine if the graph can be colored with at most M colors such that no two adjacent vertices are colored with the same color.\n\nInput Format:\n- First line: V (number of vertices), E (number of edges), and M (max colors).\n- Next E lines: two space-separated integers representing vertex indices of an edge.\n\nOutput Format:\n- Print 1 if colorable, print 0 otherwise.",
+      "difficulty": "Hard",
+      "tags": [
+        "Graphs",
+        "Backtracking"
+      ],
+      "timeLimit": 4000,
+      "memoryLimit": 256,
+      "sampleInput": "4 5 3\n0 1\n1 2\n2 3\n3 0\n0 2",
+      "sampleOutput": "1",
+      "constraints": "1 <= V <= 20\n0 <= E <= V*(V-1)/2",
+      "solutionsCount": 0,
+      "attemptsCount": 2,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.223Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.223Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "title": "Word Break",
+      "statement": "Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.\nNote that the same word in the dictionary may be reused multiple times in the segmentation.\n\nInput Format:\n- First line: String s.\n- Second line: W (number of words in dictionary).\n- Next W lines: words in the dictionary.\n\nOutput Format:\n- Print 'true' if s can be segmented, otherwise print 'false'.",
+      "difficulty": "Medium",
+      "tags": [
+        "DP",
+        "Strings"
+      ],
+      "timeLimit": 3000,
+      "memoryLimit": 256,
+      "sampleInput": "leetcode\n2\nleet\ncode",
+      "sampleOutput": "true",
+      "constraints": "1 <= s.length <= 300\n1 <= wordDict.length <= 1000\nWords are lowercase English letters.",
+      "solutionsCount": 4,
+      "attemptsCount": 6,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.231Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.231Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "title": "Sort Array",
+      "statement": "Sort an array of N integers in ascending order.\nImplement an efficient O(N log N) sorting algorithm (e.g., QuickSort or MergeSort).\n\nInput Format:\n- First line: N (size of array).\n- Second line: N space-separated integers.\n\nOutput Format:\n- Print sorted array elements separated by spaces.",
+      "difficulty": "Easy",
+      "tags": [
+        "Sorting",
+        "Arrays"
+      ],
+      "timeLimit": 2000,
+      "memoryLimit": 256,
+      "sampleInput": "5\n5 2 3 1 4",
+      "sampleOutput": "1 2 3 4 5",
+      "constraints": "1 <= N <= 50000\n-5*10^4 <= array[i] <= 5*10^4",
+      "solutionsCount": 18,
+      "attemptsCount": 20,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.238Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.238Z"
+      },
+      "__v": 0
+    }
+  ],
+  "users": [
+    {
+      "_id": {
+        "$oid": "6a4957589a776f876e92d7d6"
+      },
+      "email": "admin@codemastery.com",
+      "password": "$2a$10$qr55WmgYUpM1lT39FZUHeO4VAbjoPHrSyZgg0dFVRtg4eRqLdfUIO",
+      "fullName": "Admin Codemaster",
+      "dateOfBirth": {
+        "$date": "1990-01-01T00:00:00.000Z"
+      },
+      "totalProblemsAttempted": 5,
+      "totalProblemsSolved": 5,
+      "rating": 1500,
+      "role": "Admin",
+      "createdAt": {
+        "$date": "2026-07-04T18:56:24.531Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:24.531Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4957589a776f876e92d7d8"
+      },
+      "email": "alice@codemastery.com",
+      "password": "$2a$10$jte/Ql1nZxOxG1BROqNkXucpKa7PtXLr7vPt64DgkmY800KwLe7I6",
+      "fullName": "Alice Smith",
+      "dateOfBirth": {
+        "$date": "1995-05-12T00:00:00.000Z"
+      },
+      "totalProblemsAttempted": 6,
+      "totalProblemsSolved": 4,
+      "rating": 1309,
+      "role": "User",
+      "createdAt": {
+        "$date": "2026-07-04T18:56:24.692Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T15:06:56.549Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4957589a776f876e92d7da"
+      },
+      "email": "bob@codemastery.com",
+      "password": "$2a$10$y/SMlN8UE24sTcA02oRzzuvkyxbFYaca/lu0xEsNtNW9AwL5x54mi",
+      "fullName": "Bob Johnson",
+      "dateOfBirth": {
+        "$date": "1998-08-22T00:00:00.000Z"
+      },
+      "totalProblemsAttempted": 4,
+      "totalProblemsSolved": 2,
+      "rating": 1240,
+      "role": "User",
+      "createdAt": {
+        "$date": "2026-07-04T18:56:24.807Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:24.807Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4957589a776f876e92d7dc"
+      },
+      "email": "charlie@codemastery.com",
+      "password": "$2a$10$0y0rvXzNI/NkQKXTX5SpP.4K5gJKWRxlGuypzAuvMADheUUtQjmXW",
+      "fullName": "Charlie Brown",
+      "dateOfBirth": {
+        "$date": "2000-11-30T00:00:00.000Z"
+      },
+      "totalProblemsAttempted": 3,
+      "totalProblemsSolved": 1,
+      "rating": 1210,
+      "role": "User",
+      "createdAt": {
+        "$date": "2026-07-04T18:56:24.908Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:24.908Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7de"
+      },
+      "email": "dave@codemastery.com",
+      "password": "$2a$10$YWAPwTo6BbCEg/e2psbZquH6HpcfhTkdrQ8lyudy6IMhXDW6mz6pW",
+      "fullName": "Dave Miller",
+      "dateOfBirth": {
+        "$date": "1997-03-15T00:00:00.000Z"
+      },
+      "totalProblemsAttempted": 0,
+      "totalProblemsSolved": 0,
+      "rating": 1200,
+      "role": "User",
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.007Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.007Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a495c5b4eadbf6772230176"
+      },
+      "email": "jatinlekkala9999@gmail.com",
+      "password": "$2a$10$CzkhFrmLRkmNLXdRrgUSGu5PhWkCA490kjg9Dm12q2W3tKgFDb72C",
+      "fullName": "Jatin Lekkala",
+      "dateOfBirth": {
+        "$date": "2001-07-08T00:00:00.000Z"
+      },
+      "totalProblemsAttempted": 1,
+      "totalProblemsSolved": 1,
+      "rating": 1210,
+      "role": "User",
+      "createdAt": {
+        "$date": "2026-07-04T19:17:47.190Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T19:39:14.491Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6a4a6ac9ab63e21fe0ec9064"
+      },
+      "email": "lnrsinga9@gmail.com",
+      "password": "$2a$10$EMpI9Z8BfvUYQNTEu15DT.eFt42nIdPIF07834sieEmpYzd6d3rU2",
+      "fullName": "Narasingarao Lekkala",
+      "dateOfBirth": {
+        "$date": "2001-07-08T00:00:00.000Z"
+      },
+      "totalProblemsAttempted": 0,
+      "totalProblemsSolved": 0,
+      "rating": 1200,
+      "role": "User",
+      "createdAt": {
+        "$date": "2026-07-05T14:31:37.818Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-05T14:31:37.818Z"
+      },
+      "__v": 0
+    }
+  ],
+  "testcases": [
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7e2"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "4\n2 7 11 15\n9",
+      "expectedOutput": "0 1",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.120Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.120Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7e3"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "3\n3 2 4\n6",
+      "expectedOutput": "1 2",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.120Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.120Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7e4"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "2\n3 3\n6",
+      "expectedOutput": "0 1",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.120Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.120Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7e5"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "4\n-3 4 3 90\n0",
+      "expectedOutput": "0 2",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.120Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.120Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7e6"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "3\n-10 -20 30\n10",
+      "expectedOutput": "1 2",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.120Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.120Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7e7"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "2\n1000000000 2000000000\n3000000000",
+      "expectedOutput": "0 1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7e8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "5\n1 3 5 7 9\n14",
+      "expectedOutput": "2 4",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7e9"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "6\n1 3 5 7 9 11\n12",
+      "expectedOutput": "1 4",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7ea"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "7\n1 3 5 7 9 11 13\n16",
+      "expectedOutput": "2 5",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7eb"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "8\n1 3 5 7 9 11 13 15\n14",
+      "expectedOutput": "2 4",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7ec"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "9\n1 3 5 7 9 11 13 15 17\n20",
+      "expectedOutput": "1 8",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7ed"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "10\n1 3 5 7 9 11 13 15 17 19\n22",
+      "expectedOutput": "2 8",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7ee"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "11\n1 3 5 7 9 11 13 15 17 19 21\n18",
+      "expectedOutput": "1 7",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7ef"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "12\n1 3 5 7 9 11 13 15 17 19 21 23\n22",
+      "expectedOutput": "1 9",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7f0"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "13\n1 3 5 7 9 11 13 15 17 19 21 23 25\n22",
+      "expectedOutput": "3 7",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7f1"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "14\n1 3 5 7 9 11 13 15 17 19 21 23 25 27\n34",
+      "expectedOutput": "4 12",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7f2"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "15\n1 3 5 7 9 11 13 15 17 19 21 23 25 27 29\n36",
+      "expectedOutput": "4 13",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7f3"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "16\n1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31\n36",
+      "expectedOutput": "2 15",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7f4"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "17\n1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33\n28",
+      "expectedOutput": "3 10",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7f5"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "18\n1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35\n34",
+      "expectedOutput": "0 16",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7f6"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "19\n1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37\n38",
+      "expectedOutput": "9 9",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7f7"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "20\n1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39\n22",
+      "expectedOutput": "0 10",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7f8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "21\n1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41\n26",
+      "expectedOutput": "2 10",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7f9"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "22\n1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43\n42",
+      "expectedOutput": "6 14",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7fa"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7e0"
+      },
+      "input": "23\n1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45\n38",
+      "expectedOutput": "1 17",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.121Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7fe"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "racecar",
+      "expectedOutput": "true",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.137Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.137Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d7ff"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "hello",
+      "expectedOutput": "false",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.137Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.137Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d800"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "a",
+      "expectedOutput": "true",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.137Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.137Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d801"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "aba",
+      "expectedOutput": "true",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.137Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.137Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d802"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "abcba",
+      "expectedOutput": "true",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d803"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "abccba",
+      "expectedOutput": "true",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d804"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "noon",
+      "expectedOutput": "true",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d805"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "civic",
+      "expectedOutput": "true",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d806"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "radar",
+      "expectedOutput": "true",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d807"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "level",
+      "expectedOutput": "true",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d808"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "rotor",
+      "expectedOutput": "true",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d809"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "kayak",
+      "expectedOutput": "true",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d80a"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "reviver",
+      "expectedOutput": "true",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d80b"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "xyz",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d80c"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "coding",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d80d"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "docker",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d80e"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "redis",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d80f"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "react",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d810"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "express",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d811"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "node",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d812"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "mongodb",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.138Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d813"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "mismatch",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.139Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.139Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d814"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "palindrom",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.139Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.139Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d815"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "aa",
+      "expectedOutput": "true",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.139Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.139Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d816"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d7fc"
+      },
+      "input": "ab",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.139Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.139Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d81a"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "6",
+      "expectedOutput": "8",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d81b"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "0",
+      "expectedOutput": "0",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d81c"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "1",
+      "expectedOutput": "1",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d81d"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "2",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d81e"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "3",
+      "expectedOutput": "2",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d81f"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "4",
+      "expectedOutput": "3",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d820"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "5",
+      "expectedOutput": "5",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d821"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "6",
+      "expectedOutput": "8",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d822"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "7",
+      "expectedOutput": "13",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d823"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "8",
+      "expectedOutput": "21",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d824"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "9",
+      "expectedOutput": "34",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.149Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d825"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "10",
+      "expectedOutput": "55",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d826"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "11",
+      "expectedOutput": "89",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d827"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "12",
+      "expectedOutput": "144",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d828"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "13",
+      "expectedOutput": "233",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d829"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "14",
+      "expectedOutput": "377",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d82a"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "15",
+      "expectedOutput": "610",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d82b"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "16",
+      "expectedOutput": "987",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d82c"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "17",
+      "expectedOutput": "1597",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d82d"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "18",
+      "expectedOutput": "2584",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d82e"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "19",
+      "expectedOutput": "4181",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d82f"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "20",
+      "expectedOutput": "6765",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d830"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "21",
+      "expectedOutput": "10946",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d831"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "22",
+      "expectedOutput": "17711",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d832"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "23",
+      "expectedOutput": "28657",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d833"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "24",
+      "expectedOutput": "46368",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d834"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d818"
+      },
+      "input": "25",
+      "expectedOutput": "75025",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.150Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d838"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "5 7\n1 3 5 7 9",
+      "expectedOutput": "3",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.161Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.161Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d839"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "5 2\n1 3 5 7 9",
+      "expectedOutput": "-1",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.161Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.161Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d83a"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "1 5\n5",
+      "expectedOutput": "0",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.161Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.161Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d83b"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "6 2\n2 4 6 8 10 12",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.161Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.161Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d83c"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "6 12\n2 4 6 8 10 12",
+      "expectedOutput": "5",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.161Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.161Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d83d"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "5 -5\n-10 -5 0 5 10",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.161Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.161Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d83e"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "5 15\n-10 -5 0 5 10",
+      "expectedOutput": "-1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d83f"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "5 -15\n-10 -5 0 5 10",
+      "expectedOutput": "-1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d840"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "10 7\n-20 -17 -14 -11 -8 -5 -2 1 4 7",
+      "expectedOutput": "9",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d841"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "11 10\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10",
+      "expectedOutput": "10",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d842"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "12 -14\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13",
+      "expectedOutput": "2",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d843"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "13 1\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16",
+      "expectedOutput": "7",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d844"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "14 4\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16 19",
+      "expectedOutput": "8",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d845"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "15 -2\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16 19 22",
+      "expectedOutput": "6",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d846"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "16 19\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16 19 22 25",
+      "expectedOutput": "13",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d847"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "17 22\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16 19 22 25 28",
+      "expectedOutput": "14",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d848"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "18 10\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16 19 22 25 28 31",
+      "expectedOutput": "10",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d849"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "19 -5\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16 19 22 25 28 31 34",
+      "expectedOutput": "5",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d84a"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "20 13\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16 19 22 25 28 31 34 37",
+      "expectedOutput": "11",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d84b"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "21 10\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16 19 22 25 28 31 34 37 40",
+      "expectedOutput": "10",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d84c"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "22 22\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16 19 22 25 28 31 34 37 40 43",
+      "expectedOutput": "14",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d84d"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "23 46\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16 19 22 25 28 31 34 37 40 43 46",
+      "expectedOutput": "22",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d84e"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "24 1\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16 19 22 25 28 31 34 37 40 43 46 49",
+      "expectedOutput": "7",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d84f"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "25 13\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16 19 22 25 28 31 34 37 40 43 46 49 52",
+      "expectedOutput": "11",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d850"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d836"
+      },
+      "input": "26 -17\n-20 -17 -14 -11 -8 -5 -2 1 4 7 10 13 16 19 22 25 28 31 34 37 40 43 46 49 52 55",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.162Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d854"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "abcde\nace",
+      "expectedOutput": "3",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d855"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "abc\nabc",
+      "expectedOutput": "3",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d856"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "abc\ndef",
+      "expectedOutput": "0",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d857"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "abc\ndef",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d858"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "aggtab\ngxtxayb",
+      "expectedOutput": "4",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d859"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "aaaa\naa",
+      "expectedOutput": "2",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d85a"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "a\nb",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d85b"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "abcdefg\nabdeg",
+      "expectedOutput": "5",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d85c"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "apple\npeach",
+      "expectedOutput": "2",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d85d"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "redis\ndocker",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d85e"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "mongodb\nmongoose",
+      "expectedOutput": "5",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d85f"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "express\nnode",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d860"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "socketio\nwebsockets",
+      "expectedOutput": "6",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d861"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "competitive\nprogramming",
+      "expectedOutput": "3",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d862"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "monaco\neditor",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d863"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "react\nredux",
+      "expectedOutput": "2",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d864"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "sandbox\nisolated",
+      "expectedOutput": "3",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d865"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "compile\nrun",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d866"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "verdict\naccepted",
+      "expectedOutput": "2",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d867"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "longest\ncommon",
+      "expectedOutput": "2",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d868"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "subsequence\nsubstring",
+      "expectedOutput": "5",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d869"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "dynamic\nprogramming",
+      "expectedOutput": "3",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d86a"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "data\nstructures",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d86b"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "algorithms\nsorting",
+      "expectedOutput": "3",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d86c"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d852"
+      },
+      "input": "binary\nsearch",
+      "expectedOutput": "2",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.176Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d870"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "3\n3 1 4 5\n3 1 3 4\n2 2 6",
+      "expectedOutput": "1 1 2 3 4 4 5 6",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d871"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "1\n2 1 3",
+      "expectedOutput": "1 3",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d872"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "2\n2 2 4\n2 1 3",
+      "expectedOutput": "1 2 3 4",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d873"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "2\n1 -3\n4 -22 -9 -6 18",
+      "expectedOutput": "-22 -9 -6 -3 18",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d874"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "3\n3 -11 -1 17\n2 -25 -10\n2 -5 8",
+      "expectedOutput": "-25 -11 -10 -5 -1 8 17",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d875"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "4\n4 -10 -4 14 16\n4 -24 -17 -7 -1\n4 -25 3 10 17\n1 -14",
+      "expectedOutput": "-25 -24 -17 -14 -10 -7 -4 -1 3 10 14 16 17",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d876"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "5\n3 -13 2 16\n4 -7 -5 6 17\n2 -22 14\n4 -18 -10 -6 -4\n1 2",
+      "expectedOutput": "-22 -18 -13 -10 -7 -6 -5 -4 2 2 6 14 16 17",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d877"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "6\n4 -14 -5 2 15\n4 -17 -14 0 10\n4 -2 -1 6 12\n4 -24 -16 6 15\n4 -25 -18 -16 12\n2 -23 23",
+      "expectedOutput": "-25 -24 -23 -18 -17 -16 -16 -14 -14 -5 -2 -1 0 2 6 6 10 12 12 15 15 23",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d878"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "2\n2 8 16\n2 -20 12",
+      "expectedOutput": "-20 8 12 16",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d879"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "3\n1 -2\n3 -14 6 23\n3 -11 -9 6",
+      "expectedOutput": "-14 -11 -9 -2 6 6 23",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d87a"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "4\n4 -3 0 5 24\n3 -13 6 18\n1 21\n4 -14 -13 4 20",
+      "expectedOutput": "-14 -13 -13 -3 0 4 5 6 18 20 21 24",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d87b"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "5\n3 -14 -7 12\n3 -10 11 18\n4 -18 -11 10 23\n2 -3 23\n2 -19 20",
+      "expectedOutput": "-19 -18 -14 -11 -10 -7 -3 10 11 12 18 20 23 23",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d87c"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "6\n4 -17 -8 3 10\n1 -20\n3 -10 -6 5\n2 11 20\n1 -23\n4 -23 -9 9 17",
+      "expectedOutput": "-23 -23 -20 -17 -10 -9 -8 -6 3 5 9 10 11 17 20",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d87d"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "2\n1 -19\n3 6 13 18",
+      "expectedOutput": "-19 6 13 18",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d87e"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "3\n1 20\n2 -21 23\n4 -4 2 5 20",
+      "expectedOutput": "-21 -4 2 5 20 20 23",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.186Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d87f"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "4\n1 -19\n4 -21 -18 11 19\n1 7\n2 2 16",
+      "expectedOutput": "-21 -19 -18 2 7 11 16 19",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d880"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "5\n2 -16 1\n4 -22 -10 -6 20\n4 -22 -21 -17 0\n2 -17 1\n1 -21",
+      "expectedOutput": "-22 -22 -21 -21 -17 -17 -16 -10 -6 0 1 1 20",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d881"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "6\n3 -24 -24 -22\n3 -12 1 16\n1 -1\n3 -21 7 19\n2 -15 5\n2 -1 9",
+      "expectedOutput": "-24 -24 -22 -21 -15 -12 -1 -1 1 5 7 9 16 19",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d882"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "2\n4 -7 9 9 11\n3 4 7 22",
+      "expectedOutput": "-7 4 7 9 9 11 22",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d883"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "3\n2 -10 14\n2 -3 17\n4 -25 -21 -4 10",
+      "expectedOutput": "-25 -21 -10 -4 -3 10 14 17",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d884"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "4\n1 6\n4 3 7 13 15\n4 -23 -17 -15 2\n3 -22 -18 12",
+      "expectedOutput": "-23 -22 -18 -17 -15 2 3 6 7 12 13 15",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d885"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "5\n3 -12 -9 -1\n1 2\n3 -24 16 19\n4 -20 -15 7 14\n2 -16 0",
+      "expectedOutput": "-24 -20 -16 -15 -12 -9 -1 0 2 7 14 16 19",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d886"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "6\n3 -21 -18 16\n3 -15 -15 5\n3 -8 -5 13\n4 -16 1 13 24\n1 -12\n1 -8",
+      "expectedOutput": "-21 -18 -16 -15 -15 -12 -8 -8 -5 1 5 13 13 16 24",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d887"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "2\n4 -18 -10 11 17\n1 14",
+      "expectedOutput": "-18 -10 11 14 17",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d888"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d86e"
+      },
+      "input": "3\n3 -8 9 13\n4 -22 -22 -8 10\n1 13",
+      "expectedOutput": "-22 -22 -8 -8 9 10 13 13",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.187Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d88c"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "4",
+      "expectedOutput": "2",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d88d"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "1",
+      "expectedOutput": "1",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d88e"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "2",
+      "expectedOutput": "0",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d88f"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "3",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d890"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "5",
+      "expectedOutput": "10",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d891"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "6",
+      "expectedOutput": "4",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d892"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "7",
+      "expectedOutput": "40",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d893"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "8",
+      "expectedOutput": "92",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d894"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "9",
+      "expectedOutput": "352",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d895"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "4",
+      "expectedOutput": "2",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d896"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "5",
+      "expectedOutput": "10",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d897"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "6",
+      "expectedOutput": "4",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d898"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "7",
+      "expectedOutput": "40",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d899"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "8",
+      "expectedOutput": "92",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d89a"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "9",
+      "expectedOutput": "352",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d89b"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "3",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d89c"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "4",
+      "expectedOutput": "2",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d89d"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "5",
+      "expectedOutput": "10",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d89e"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "6",
+      "expectedOutput": "4",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d89f"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "7",
+      "expectedOutput": "40",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8a0"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "8",
+      "expectedOutput": "92",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8a1"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "9",
+      "expectedOutput": "352",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8a2"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "5",
+      "expectedOutput": "10",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8a3"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "6",
+      "expectedOutput": "4",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8a4"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d88a"
+      },
+      "input": "7",
+      "expectedOutput": "40",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.218Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8a8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "4 5 3\n0 1\n1 2\n2 3\n3 0\n0 2",
+      "expectedOutput": "1",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8a9"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 3 2\n0 1\n1 2\n2 0",
+      "expectedOutput": "0",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8aa"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "4 6 3\n0 1\n1 2\n2 3\n3 0\n0 2\n1 3",
+      "expectedOutput": "0",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8ab"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 2\n0 1\n1 2",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8ac"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 1\n0 1\n1 2",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8ad"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 2\n0 1\n1 2",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8ae"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 1\n0 1\n1 2",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8af"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 2\n0 1\n1 2",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8b0"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 1\n0 1\n1 2",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8b1"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 2\n0 1\n1 2",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8b2"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 1\n0 1\n1 2",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8b3"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 2\n0 1\n1 2",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8b4"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 1\n0 1\n1 2",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8b5"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 2\n0 1\n1 2",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8b6"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 1\n0 1\n1 2",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8b7"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 2\n0 1\n1 2",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8b8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 1\n0 1\n1 2",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8b9"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 2\n0 1\n1 2",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8ba"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 1\n0 1\n1 2",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8bb"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 2\n0 1\n1 2",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8bc"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 1\n0 1\n1 2",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8bd"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 2\n0 1\n1 2",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8be"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 1\n0 1\n1 2",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8bf"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 2\n0 1\n1 2",
+      "expectedOutput": "1",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.227Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8c0"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8a6"
+      },
+      "input": "3 2 1\n0 1\n1 2",
+      "expectedOutput": "0",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.228Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.228Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8c4"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "leetcode\n2\nleet\ncode",
+      "expectedOutput": "true",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8c5"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsandog\n5\ncats\ndog\nsand\nand\ncat",
+      "expectedOutput": "false",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8c6"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "applepenapple\n2\napple\npen",
+      "expectedOutput": "true",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8c7"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsandog\n4\ncats\ndog\nsand\nand",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8c8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8c9"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8ca"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsandog\n4\ncats\ndog\nsand\nand",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8cb"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8cc"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8cd"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsandog\n4\ncats\ndog\nsand\nand",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8ce"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8cf"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8d0"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsandog\n4\ncats\ndog\nsand\nand",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8d1"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8d2"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8d3"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsandog\n4\ncats\ndog\nsand\nand",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8d4"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8d5"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8d6"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsandog\n4\ncats\ndog\nsand\nand",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8d7"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8d8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8d9"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsandog\n4\ncats\ndog\nsand\nand",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8da"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8db"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsanddog\n3\ncats\nsand\ndog",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8dc"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8c2"
+      },
+      "input": "catsandog\n4\ncats\ndog\nsand\nand",
+      "expectedOutput": "false",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.234Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8e0"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "5\n5 2 3 1 4",
+      "expectedOutput": "1 2 3 4 5",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.242Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.242Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8e1"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "3\n1 1 1",
+      "expectedOutput": "1 1 1",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8e2"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "6\n-2 3 -5 8 1 0",
+      "expectedOutput": "-5 -2 0 1 3 8",
+      "isHidden": false,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8e3"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "5\n-32 -67 -37 3 -62",
+      "expectedOutput": "-67 -62 -37 -32 3",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8e4"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "6\n99 -52 72 31 26 -85",
+      "expectedOutput": "-85 -52 26 31 72 99",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8e5"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "7\n-34 33 74 -23 18 -74 -27",
+      "expectedOutput": "-74 -34 -27 -23 18 33 74",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8e6"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "8\n40 72 68 30 63 96 -14 -52",
+      "expectedOutput": "-52 -14 30 40 63 68 72 96",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8e7"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "9\n9 52 -94 -14 -46 -34 -32 8 -22",
+      "expectedOutput": "-94 -46 -34 -32 -22 -14 8 9 52",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8e8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "10\n-21 92 14 48 84 -5 -48 -22 -51 -48",
+      "expectedOutput": "-51 -48 -48 -22 -21 -5 14 48 84 92",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8e9"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "11\n-18 23 -96 16 53 -5 31 21 29 74 39",
+      "expectedOutput": "-96 -18 -5 16 21 23 29 31 39 53 74",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8ea"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "12\n-79 -6 -83 -19 86 -83 -93 62 27 38 -18 -1",
+      "expectedOutput": "-93 -83 -83 -79 -19 -18 -6 -1 27 38 62 86",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8eb"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "13\n82 -77 51 56 -37 10 30 -81 -53 -71 -80 14 -38",
+      "expectedOutput": "-81 -80 -77 -71 -53 -38 -37 10 14 30 51 56 82",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8ec"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "14\n37 -70 -22 49 95 -58 -16 83 -26 -65 -51 -41 -22 -35",
+      "expectedOutput": "-70 -65 -58 -51 -41 -35 -26 -22 -22 -16 37 49 83 95",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8ed"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "15\n-12 1 38 -4 -86 -82 15 97 -6 56 53 96 25 -42 -82",
+      "expectedOutput": "-86 -82 -82 -42 -12 -6 -4 1 15 25 38 53 56 96 97",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8ee"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "16\n-64 -81 -50 86 -83 -84 90 0 -33 -93 9 46 63 -90 -76 71",
+      "expectedOutput": "-93 -90 -84 -83 -81 -76 -64 -50 -33 0 9 46 63 71 86 90",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8ef"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "17\n21 48 -98 25 -97 -81 -93 85 71 22 73 42 -81 6 -6 44 -36",
+      "expectedOutput": "-98 -97 -93 -81 -81 -36 -6 6 21 22 25 42 44 48 71 73 85",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8f0"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "18\n-64 58 -36 -24 42 -55 -59 38 44 47 32 -20 7 -65 23 32 64 -83",
+      "expectedOutput": "-83 -65 -64 -59 -55 -36 -24 -20 7 23 32 32 38 42 44 47 58 64",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8f1"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "19\n-85 -16 -78 -94 27 76 -12 36 47 93 -64 3 -18 -92 37 -85 -51 -100 -13",
+      "expectedOutput": "-100 -94 -92 -85 -85 -78 -64 -51 -18 -16 -13 -12 3 27 36 37 47 76 93",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8f2"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "20\n69 62 52 -93 23 91 42 -64 82 92 45 69 18 76 42 -30 21 67 -58 -81",
+      "expectedOutput": "-93 -81 -64 -58 -30 18 21 23 42 42 45 52 62 67 69 69 76 82 91 92",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8f3"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "21\n-13 -30 -60 20 20 -17 97 64 41 -60 8 49 -36 80 78 1 -64 -17 -12 49 21",
+      "expectedOutput": "-64 -60 -60 -36 -30 -17 -17 -13 -12 1 8 20 20 21 41 49 49 64 78 80 97",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8f4"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "22\n68 -24 -71 -22 -63 -89 -87 -96 -32 -27 96 -52 24 42 78 -45 83 44 63 87 -73 -31",
+      "expectedOutput": "-96 -89 -87 -73 -71 -63 -52 -45 -32 -31 -27 -24 -22 24 42 44 63 68 78 83 87 96",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8f5"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "23\n58 7 56 72 -87 37 36 32 -85 88 -24 -1 77 83 -40 -47 -82 28 -18 89 39 79 3",
+      "expectedOutput": "-87 -85 -82 -47 -40 -24 -18 -1 3 7 28 32 36 37 39 56 58 72 77 79 83 88 89",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8f6"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "24\n98 29 36 -5 -7 -21 -48 -1 -55 -43 -93 -64 -83 39 3 -70 5 -1 87 -41 10 -67 -47 76",
+      "expectedOutput": "-93 -83 -70 -67 -64 -55 -48 -47 -43 -41 -21 -7 -5 -1 -1 3 5 10 29 36 39 76 87 98",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8f7"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "25\n-12 57 -83 11 -12 67 26 -76 35 -70 -74 92 -62 -96 -32 -38 70 -14 -64 35 -65 30 23 -71 -40",
+      "expectedOutput": "-96 -83 -76 -74 -71 -70 -65 -64 -62 -40 -38 -32 -14 -12 -12 11 23 26 30 35 35 57 67 70 92",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6a4957599a776f876e92d8f8"
+      },
+      "problemId": {
+        "$oid": "6a4957599a776f876e92d8de"
+      },
+      "input": "26\n32 -1 57 99 -54 -43 -90 0 -6 -22 67 -29 72 20 -40 -4 -25 -84 85 5 -28 72 1 57 95 26",
+      "expectedOutput": "-90 -84 -54 -43 -40 -29 -28 -25 -22 -6 -4 -1 0 1 5 20 26 32 57 57 67 72 72 85 95 99",
+      "isHidden": true,
+      "__v": 0,
+      "createdAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      },
+      "updatedAt": {
+        "$date": "2026-07-04T18:56:25.243Z"
+      }
+    }
+  ]
+}

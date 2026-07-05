@@ -47,6 +47,18 @@ app.use('/api/submissions', (req, res, next) => {
 app.use('/api/leaderboard', require('./routes/leaderboard'));
 app.use('/api/users', require('./routes/users'));
 
+// Serve static assets in production
+if (process.env.NODE_ENV === 'production') {
+  const path = require('path');
+  // Serve static assets from frontend/dist
+  app.use(express.static(path.join(__dirname, '../../frontend/dist')));
+  
+  // Point fallback routes to index.html
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../../frontend', 'dist', 'index.html'));
+  });
+}
+
 // Global Error Handler
 app.use((err, req, res, next) => {
   console.error('Unhandled error:', err.stack);
