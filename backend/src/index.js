@@ -16,7 +16,11 @@ const server = http.createServer(app);
 connectDB();
 
 // Middlewares
-app.use(helmet());
+app.use(helmet({
+  contentSecurityPolicy: false,
+  crossOriginEmbedderPolicy: false,
+  hsts: false
+}));
 app.use(cors({
   origin: '*', // In production, replace with frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
