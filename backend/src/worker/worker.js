@@ -181,7 +181,7 @@ const evaluateSubmission = async (submissionId) => {
         'run', '--rm',
         '-v', `${hostDirForMount}:/code:ro`,
         '-v', `${hostOutDirForMount}:/out`,
-        'gcc:12-slim',
+        'gcc:12',
         'g++', '-O3', '/code/solution.cpp', '-o', '/out/solution'
       ];
       
@@ -197,7 +197,7 @@ const evaluateSubmission = async (submissionId) => {
         'run', '--rm',
         '-v', `${hostDirForMount}:/code:ro`,
         '-v', `${hostOutDirForMount}:/out`,
-        'openjdk:11-slim',
+        'eclipse-temurin:11-jdk-alpine',
         'javac', '-d', '/out', '/code/Main.java'
       ];
 
@@ -265,7 +265,7 @@ const evaluateSubmission = async (submissionId) => {
           '--cpus', '1',
           '--read-only',
           '-v', `${hostOutDirForMount}:/out:ro`,
-          'gcc:12-slim',
+          'gcc:12',
           '/out/solution'
         ];
       } else if (submission.language === 'Java') {
@@ -277,7 +277,7 @@ const evaluateSubmission = async (submissionId) => {
           '--cpus', '1',
           '--read-only',
           '-v', `${hostOutDirForMount}:/out:ro`,
-          'openjdk:11-slim',
+          'eclipse-temurin:11-jdk-alpine',
           'java', '-cp', '/out', 'Main'
         ];
       } else if (submission.language === 'Python') {
