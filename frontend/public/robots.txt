@@ -1,0 +1,20 @@
+# Robots.txt for LazyStudio.ai
+# Allowed for all Search Engines and AI scrapers
+
+User-agent: *
+Allow: /
+
+# Specifically allow major AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://www.lazystudio.ai/sitemap.xml

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO Metadata -->
+    <title>CodeMastery | Premium Competitive Coding Platform</title>
+    <meta name="description" content="Master algorithms and data structures. CodeMastery features an integrated Monaco editor, secure sandboxed execution for C++, Java, and Python, and real-time Socket.IO verdicts." />
+    <meta name="keywords" content="competitive programming, online judge, learn to code, Monaco editor, docker sandbox, python compiler, cpp compiler, java compiler, coding challenges" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data: JSON-LD Schema Markup for Search Engines -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CodeMastery",
+        "description": "Secure, real-time sandboxed competitive programming platform with Monaco editor and Docker container execution.",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "All",
+        "url": "http://localhost:5173",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Premium Loader Splash Screen (visible during initial bundle download) -->
+    <div id="root">
+      <style>
+        .app-loader-container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background-color: #0a0b10;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          z-index: 99999;
+          font-family: 'Outfit', sans-serif;
+        }
+        .app-loader-title {
+          font-size: 2rem;
+          font-weight: 800;
+          letter-spacing: 2px;
+          margin-bottom: 24px;
+          background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.4));
+          animation: pulseTitle 1.8s ease-in-out infinite;
+        }
+        .app-loader-spinner {
+          width: 32px;
+          height: 32px;
+          border: 3px solid rgba(139, 92, 246, 0.15);
+          border-top: 3px solid #8b5cf6;
+          border-radius: 50%;
+          animation: spinLoader 0.8s linear infinite;
+        }
+        @keyframes pulseTitle {
+          0%, 100% { transform: scale(1); opacity: 0.85; }
+          50% { transform: scale(1.05); opacity: 1; filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.6)); }
+        }
+        @keyframes spinLoader {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      </style>
+      <div class="app-loader-container">
+        <div class="app-loader-title">CODEMASTERY</div>
+        <div class="app-loader-spinner"></div>
+      </div>
+    </div>
+
+    <!-- Fallback Semantic Markup for Non-JS SEO Crawlers -->
+    <noscript>
+      <header>
+        <nav>
+          <a href="/">CodeMastery</a>
+          <ul>
+            <li><a href="/problems">Problems</a></li>
+            <li><a href="/leaderboard">Leaderboard</a></li>
+            <li><a href="/login">Sign In</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <h1>Master Competitive Coding in Real Time</h1>
+          <p>Practice data structures and algorithms in C++, Java, and Python. Features high-performance Docker compile/run isolation and immediate evaluation reports.</p>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 CodeMastery Platform. All rights reserved.</p>
+      </footer>
+    </noscript>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
