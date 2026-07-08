@@ -41,6 +41,7 @@ const submitLimiter = rateLimit({
 // Mount Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/problems', require('./routes/problems'));
+app.use('/api/ai', require('./routes/ai'));
 // Apply rate limiter to submission endpoint
 app.use('/api/submissions', (req, res, next) => {
   if (req.method === 'POST') {

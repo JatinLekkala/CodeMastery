@@ -5,8 +5,10 @@ import { fetchProblemById, clearCurrentProblem } from '../redux/slices/problemSl
 import { submitSolution, runSolution, clearCurrentSubmission, updateSubmissionVerdict } from '../redux/slices/submissionSlice';
 import CodeEditor from '../components/CodeEditor';
 import VerdictDisplay from '../components/VerdictDisplay';
+import MarkdownRenderer from '../components/MarkdownRenderer';
 import { ArrowLeft, Play, AlertCircle, FileCode2, Info, Code, PlayCircle } from 'lucide-react';
 import socket from '../utils/socket';
+import api from '../utils/api';
 import { toast } from 'react-toastify';
 import confetti from 'canvas-confetti';
 
@@ -27,6 +29,11 @@ const ProblemDetail = ({ theme }) => {
   const [enableCustomInput, setEnableCustomInput] = useState(false);
   const [customInput, setCustomInput] = useState('');
   const [actionType, setActionType] = useState(null); // 'run' or 'submit'
+  
+  const [rightTab, setRightTab] = useState('problem'); // 'problem' or 'ai'
+  const [aiLoading, setAiLoading] = useState(false);
+  const [aiResponse, setAiResponse] = useState('');
+  const [aiError, setAiError] = useState('');
 
   // Ref to track active submission for socket hook
   const activeSubmissionIdRef = useRef(null);
@@ -122,8 +129,55 @@ const ProblemDetail = ({ theme }) => {
 
     return () => {
       socket.off('submission_verdict', handleSubmissionVerdict);
-    };
   }, [dispatch]);
+
+  const handleAICompletion = async () => {
+    if (aiLoading) return;
+    setAiLoading(true);
+    setAiError('');
+    try {
+      const res = await api.post('/ai/complete', {
+        code: currentCode,
+        language,
+        problemId: id
+      });
+      if (res.data && res.data.completedCode) {
+        setCodes(prev => ({
+          ...prev,
+          [language]: res.data.completedCode
+        }));
+        toast.success('AI Code Completion applied! 🎉');
+      }
+    } catch (err) {
+      setAiError(err.response?.data?.message || 'Failed to complete code.');
+      toast.error('AI Completion failed.');
+    } finally {
+      setAiLoading(false);
+    }
+  };
+
+  const handleAICodeReview = async () => {
+    if (aiLoading) return;
+    setAiLoading(true);
+    setAiError('');
+    setAiResponse('');
+    try {
+      const res = await api.post('/ai/review', {
+        code: currentCode,
+        language,
+        problemId: id
+      });
+      if (res.data && res.data.reviewMarkdown) {
+        setAiResponse(res.data.reviewMarkdown);
+        toast.success('Code Review analysis complete! 🔍');
+      }
+    } catch (err) {
+      setAiError(err.response?.data?.message || 'Failed to analyze code.');
+      toast.error('AI Code Review failed.');
+    } finally {
+      setAiLoading(false);
+    }
+  };
 
   const handleRun = async () => {
     if (!currentCode || submitting) return;
@@ -345,104 +399,224 @@ const ProblemDetail = ({ theme }) => {
 
       </div>
 
-      {/* Right panel: Description, Constraints, Samples */}
+      {/* Right panel: Description, Constraints, Samples OR AI Assistant */}
       <div className="glass-panel" style={{ display: 'flex', flexDirection: 'column', height: '100%', overflowY: 'auto', padding: '1.5rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-        <Link 
-          to="/problems" 
-          style={{ 
-            display: 'inline-flex', 
-            alignItems: 'center', 
-            gap: '0.25rem', 
-            textDecoration: 'none', 
-            color: 'var(--text-secondary)',
-            fontSize: '0.9rem',
-            fontWeight: 500,
-            marginBottom: '1.5rem'
-          }}
-          className="nav-link"
-        >
-          <ArrowLeft size={14} />
-          <span>Back to Problems</span>
-        </Link>
-
-        <h1 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.5rem' }}>{currentProblem.title}</h1>
         
-        <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '1.5rem', alignItems: 'center' }}>
-          <span className={`badge ${currentProblem.difficulty === 'Easy' ? 'diff-easy' : currentProblem.difficulty === 'Medium' ? 'diff-medium' : 'diff-hard'}`}>
-            {currentProblem.difficulty}
-          </span>
-          <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', display: 'flex', gap: '0.25rem', alignItems: 'center' }}>
-            Time Limit: {currentProblem.timeLimit / 1000}s
-          </span>
-          <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', display: 'flex', gap: '0.25rem', alignItems: 'center' }}>
-            Memory Limit: {currentProblem.memoryLimit}MB
-          </span>
+        {/* Right Panel Tabs */}
+        <div style={{ display: 'flex', borderBottom: '1px solid var(--border)', marginBottom: '1.5rem', gap: '1rem' }}>
+          <button 
+            onClick={() => setRightTab('problem')} 
+            style={{ 
+              background: 'none', 
+              border: 'none', 
+              borderBottom: rightTab === 'problem' ? '2px solid var(--primary)' : '2px solid transparent',
+              color: rightTab === 'problem' ? 'var(--text-primary)' : 'var(--text-secondary)',
+              paddingBottom: '0.5rem', 
+              fontWeight: 600,
+              fontSize: '0.95rem',
+              cursor: 'pointer'
+            }}
+          >
+            Problem Statement
+          </button>
+          <button 
+            onClick={() => setRightTab('ai')} 
+            style={{ 
+              background: 'none', 
+              border: 'none', 
+              borderBottom: rightTab === 'ai' ? '2px solid var(--primary)' : '2px solid transparent',
+              color: rightTab === 'ai' ? 'var(--text-primary)' : 'var(--text-secondary)',
+              paddingBottom: '0.5rem', 
+              fontWeight: 600,
+              fontSize: '0.95rem',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.25rem'
+            }}
+          >
+            <Code size={16} color="var(--primary)" />
+            <span>AI Assistant</span>
+          </button>
         </div>
 
-        {/* Problem Statement */}
-        <div style={{ flexGrow: 1 }}>
-          <div style={{ marginBottom: '2rem', whiteSpace: 'pre-wrap', lineHeight: 1.6, fontSize: '1rem', color: 'var(--text-primary)' }}>
-            {currentProblem.statement}
+        {rightTab === 'ai' ? (
+          <div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+              <h2 style={{ fontSize: '1.25rem', fontWeight: 700, margin: 0, display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
+                <span>Gemini AI Assistant</span>
+              </h2>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0 }}>
+                Get code completion recommendations or full best practices audits.
+              </p>
+            </div>
+
+            <div style={{ display: 'flex', gap: '1rem' }}>
+              <button
+                onClick={handleAICompletion}
+                disabled={aiLoading || !currentCode}
+                className="btn btn-secondary"
+                style={{
+                  flex: 1,
+                  padding: '0.6rem 0.8rem',
+                  fontSize: '0.88rem',
+                  fontWeight: 600,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '0.35rem'
+                }}
+              >
+                <span>✨ Complete Code</span>
+              </button>
+
+              <button
+                onClick={handleAICodeReview}
+                disabled={aiLoading || !currentCode}
+                className="btn btn-primary"
+                style={{
+                  flex: 1,
+                  padding: '0.6rem 0.8rem',
+                  fontSize: '0.88rem',
+                  fontWeight: 600,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '0.35rem'
+                }}
+              >
+                <span>🔍 Code Review</span>
+              </button>
+            </div>
+
+            {aiLoading && (
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', padding: '2rem 0' }}>
+                <div className="spinner" style={{ width: '28px', height: '28px' }}></div>
+                <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Gemini is thinking...</span>
+              </div>
+            )}
+
+            {aiError && (
+              <div className="alert alert-danger" style={{ fontSize: '0.85rem', padding: '0.75rem' }}>
+                {aiError}
+              </div>
+            )}
+
+            {aiResponse && !aiLoading && (
+              <div 
+                className="glass-panel" 
+                style={{ 
+                  flexGrow: 1, 
+                  overflowY: 'auto', 
+                  maxHeight: '400px', 
+                  padding: '1rem', 
+                  background: 'var(--run-case-bg)', 
+                  border: '1px solid var(--border)', 
+                  borderRadius: 'var(--radius-sm)' 
+                }}
+              >
+                <MarkdownRenderer markdown={aiResponse} />
+              </div>
+            )}
           </div>
+        ) : (
+          <div style={{ flexGrow: 1 }}>
+            <Link 
+              to="/problems" 
+              style={{ 
+                display: 'inline-flex', 
+                alignItems: 'center', 
+                gap: '0.25rem', 
+                textDecoration: 'none', 
+                color: 'var(--text-secondary)',
+                fontSize: '0.9rem',
+                fontWeight: 500,
+                marginBottom: '1.5rem'
+              }}
+              className="nav-link"
+            >
+              <ArrowLeft size={14} />
+              <span>Back to Problems</span>
+            </Link>
 
-          {currentProblem.constraints && (
-            <div style={{ marginBottom: '2rem' }}>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.5rem', display: 'flex', gap: '0.25rem', alignItems: 'center' }}>
-                <Info size={16} /> Constraints
-              </h3>
-              <pre 
-                style={{ 
-                  background: 'var(--pre-bg)', 
-                  padding: '0.75rem 1rem', 
-                  borderRadius: 'var(--radius-sm)', 
-                  fontSize: '0.9rem',
-                  fontFamily: 'var(--font-mono)',
-                  border: '1px solid var(--border)'
-                }}
-              >
-                {currentProblem.constraints}
-              </pre>
+            <h1 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.5rem' }}>{currentProblem.title}</h1>
+            
+            <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '1.5rem', alignItems: 'center' }}>
+              <span className={`badge ${currentProblem.difficulty === 'Easy' ? 'diff-easy' : currentProblem.difficulty === 'Medium' ? 'diff-medium' : 'diff-hard'}`}>
+                {currentProblem.difficulty}
+              </span>
+              <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', display: 'flex', gap: '0.25rem', alignItems: 'center' }}>
+                Time Limit: {currentProblem.timeLimit / 1000}s
+              </span>
+              <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', display: 'flex', gap: '0.25rem', alignItems: 'center' }}>
+                Memory Limit: {currentProblem.memoryLimit}MB
+              </span>
             </div>
-          )}
 
-          {currentProblem.sampleInput && (
-            <div style={{ marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.5rem' }}>Sample Input</h3>
-              <pre 
-                style={{ 
-                  background: 'var(--pre-bg)', 
-                  padding: '0.8rem 1rem', 
-                  borderRadius: 'var(--radius-sm)',
-                  fontSize: '0.9rem',
-                  fontFamily: 'var(--font-mono)',
-                  overflowX: 'auto',
-                  border: '1px solid var(--border)'
-                }}
-              >
-                {currentProblem.sampleInput}
-              </pre>
+            {/* Problem Statement */}
+            <div style={{ marginBottom: '2rem', whiteSpace: 'pre-wrap', lineHeight: 1.6, fontSize: '1rem', color: 'var(--text-primary)' }}>
+              {currentProblem.statement}
             </div>
-          )}
 
-          {currentProblem.sampleOutput && (
-            <div style={{ marginBottom: '2rem' }}>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.5rem' }}>Sample Output</h3>
-              <pre 
-                style={{ 
-                  background: 'var(--pre-bg)', 
-                  padding: '0.8rem 1rem', 
-                  borderRadius: 'var(--radius-sm)',
-                  fontSize: '0.9rem',
-                  fontFamily: 'var(--font-mono)',
-                  overflowX: 'auto',
-                  border: '1px solid var(--border)'
-                }}
-              >
-                {currentProblem.sampleOutput}
-              </pre>
-            </div>
-          )}
-        </div>
+            {currentProblem.constraints && (
+              <div style={{ marginBottom: '2rem' }}>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.5rem', display: 'flex', gap: '0.25rem', alignItems: 'center' }}>
+                  <Info size={16} /> Constraints
+                </h3>
+                <pre 
+                  style={{ 
+                    background: 'var(--pre-bg)', 
+                    padding: '0.75rem 1rem', 
+                    borderRadius: 'var(--radius-sm)', 
+                    fontSize: '0.9rem',
+                    fontFamily: 'var(--font-mono)',
+                    border: '1px solid var(--border)'
+                  }}
+                >
+                  {currentProblem.constraints}
+                </pre>
+              </div>
+            )}
+
+            {currentProblem.sampleInput && (
+              <div style={{ marginBottom: '1.5rem' }}>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.5rem' }}>Sample Input</h3>
+                <pre 
+                  style={{ 
+                    background: 'var(--pre-bg)', 
+                    padding: '0.8rem 1rem', 
+                    borderRadius: 'var(--radius-sm)',
+                    fontSize: '0.9rem',
+                    fontFamily: 'var(--font-mono)',
+                    overflowX: 'auto',
+                    border: '1px solid var(--border)'
+                  }}
+                >
+                  {currentProblem.sampleInput}
+                </pre>
+              </div>
+            )}
+
+            {currentProblem.sampleOutput && (
+              <div style={{ marginBottom: '2rem' }}>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.5rem' }}>Sample Output</h3>
+                <pre 
+                  style={{ 
+                    background: 'var(--pre-bg)', 
+                    padding: '0.8rem 1rem', 
+                    borderRadius: 'var(--radius-sm)',
+                    fontSize: '0.9rem',
+                    fontFamily: 'var(--font-mono)',
+                    overflowX: 'auto',
+                    border: '1px solid var(--border)'
+                  }}
+                >
+                  {currentProblem.sampleOutput}
+                </pre>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
     </div>
