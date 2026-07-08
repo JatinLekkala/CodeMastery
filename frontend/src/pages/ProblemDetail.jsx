@@ -129,6 +129,7 @@ const ProblemDetail = ({ theme }) => {
 
     return () => {
       socket.off('submission_verdict', handleSubmissionVerdict);
+    };
   }, [dispatch]);
 
   const handleAICompletion = async () => {
