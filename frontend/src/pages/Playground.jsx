@@ -28,6 +28,25 @@ const Playground = ({ theme }) => {
 
   useEffect(() => {
     dispatch(clearCurrentSubmission());
+
+    const storedDraft = localStorage.getItem('codemastery-draft:playground');
+    if (storedDraft) {
+      try {
+        setCodes(JSON.parse(storedDraft));
+      } catch (e) {
+        setCodes({
+          'C++': '',
+          'Java': '',
+          'Python': ''
+        });
+      }
+    } else {
+      setCodes({
+        'C++': '',
+        'Java': '',
+        'Python': ''
+      });
+    }
     
     // Connect socket if user is authenticated and not connected
     if (isAuthenticated && user) {
@@ -41,6 +60,17 @@ const Playground = ({ theme }) => {
       dispatch(clearCurrentSubmission());
     };
   }, [dispatch, isAuthenticated, user]);
+
+  // Debounced auto-save of playground code to localStorage
+  useEffect(() => {
+    if (!codes['C++'] && !codes['Java'] && !codes['Python']) return;
+
+    const delayDebounceFn = setTimeout(() => {
+      localStorage.setItem('codemastery-draft:playground', JSON.stringify(codes));
+    }, 500);
+
+    return () => clearTimeout(delayDebounceFn);
+  }, [codes]);
 
   useEffect(() => {
     // Socket listener for real-time verdict updates
@@ -75,7 +105,7 @@ const Playground = ({ theme }) => {
     if (!currentCode || submitting) return;
 
     dispatch(clearCurrentSubmission());
-    toast.info('Sandbox run queued... streaming input data.');
+    toast.info('Run initiated... executing in isolated sandbox.');
     
     const payload = {
       problemId: null,
@@ -86,10 +116,21 @@ const Playground = ({ theme }) => {
 
     const result = await dispatch(runSolution(payload));
     if (runSolution.fulfilled.match(result)) {
-      console.log('Playground Run queued with ID:', result.payload._id);
-      activeSubmissionIdRef.current = result.payload._id;
+      const finalPayload = result.payload;
+      if (finalPayload.verdict === 'Accepted') {
+        confetti({
+          particleCount: 100,
+          spread: 60,
+          origin: { y: 0.6 }
+        });
+        toast.success('Playground execution complete! Code run was successful. 🎉');
+      } else if (finalPayload.verdict === 'Compilation Error') {
+        toast.error('Compilation failed! Click "Copy Log" to debug.');
+      } else {
+        toast.error(`Playground execution returned: ${finalPayload.verdict || 'failed'}`);
+      }
     } else {
-      toast.error('Failed to queue playground execution.');
+      toast.error('Failed to execute playground run.');
     }
   };
 

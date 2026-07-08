@@ -17,6 +17,14 @@ const Submission = require('../models/Submission');
 connectDB();
 
 const redisClient = createRedisClient();
+const queueClient = createRedisClient();
+
+const handleRedisError = (err) => {
+  console.error('[Worker] Critical Redis Connection Loss. Exiting for PM2 recovery:', err);
+  process.exit(1);
+};
+redisClient.on('error', handleRedisError);
+queueClient.on('error', handleRedisError);
 
 const TEMP_BASE_DIR = path.resolve(__dirname, '../../temp_submissions');
 if (!fs.existsSync(TEMP_BASE_DIR)) {
@@ -375,21 +383,39 @@ const evaluateSubmission = async (submissionId) => {
       }
 
       if (finalVerdict === 'Accepted') {
-        // Check if user has already solved this problem
-        const priorAccepted = await Submission.countDocuments({
-          userId,
-          problemId,
-          verdict: 'Accepted',
-          isRunOnly: false,
-          _id: { $ne: submission._id },
-        });
+        const lockKey = `lock:rating:${userId}:${problemId}`;
+        let hasLock = false;
+        try {
+          // Acquire lock with 5-second TTL (NX = only if not exists, PX = milliseconds TTL)
+          const reply = await redisClient.set(lockKey, '1', 'NX', 'PX', 5000);
+          if (reply === 'OK') {
+            hasLock = true;
+            
+            // Check if user has already solved this problem
+            const priorAccepted = await Submission.countDocuments({
+              userId,
+              problemId,
+              verdict: 'Accepted',
+              isRunOnly: false,
+              _id: { $ne: submission._id },
+            });
 
-        if (priorAccepted === 0) {
-          // First time solving!
-          ratingDelta = 10;
-          await User.findByIdAndUpdate(userId, { $inc: { totalProblemsSolved: 1, rating: 10 } });
-          await Problem.findByIdAndUpdate(problemId, { $inc: { solutionsCount: 1 } });
-          console.log(`[Worker] User ${userId} solved ${problem.title} for the first time (+10 rating)`);
+            if (priorAccepted === 0) {
+              // First time solving!
+              ratingDelta = 10;
+              await User.findByIdAndUpdate(userId, { $inc: { totalProblemsSolved: 1, rating: 10 } });
+              await Problem.findByIdAndUpdate(problemId, { $inc: { solutionsCount: 1 } });
+              console.log(`[Worker] User ${userId} solved ${problem.title} for the first time (+10 rating)`);
+            }
+          } else {
+            console.log(`[Worker] Skip duplicate AC rating check for user ${userId} and problem ${problemId} due to active lock.`);
+          }
+        } catch (lockErr) {
+          console.error('[Worker] Lock error during rating update:', lockErr);
+        } finally {
+          if (hasLock) {
+            await redisClient.del(lockKey);
+          }
         }
       } else {
         // Incorrect submission (WA, TLE, RE)
@@ -444,8 +470,8 @@ const startWorker = async () => {
   
   while (true) {
     try {
-      // Pop submission from queue (blocking pop)
-      const result = await redisClient.brpop('submission_queue', 0);
+      // Pop submission from queue (blocking pop using dedicated queueClient)
+      const result = await queueClient.brpop('submission_queue', 0);
       if (result && result.length === 2) {
         const submissionId = result[1];
         await evaluateSubmission(submissionId);
@@ -457,5 +483,44 @@ const startWorker = async () => {
     }
   }
 };
+
+// Watchdog timer to automatically fail stale submissions (running or pending > 5 minutes)
+setInterval(async () => {
+  try {
+    const staleThreshold = new Date(Date.now() - 5 * 60 * 1000); // 5 minutes ago
+    const staleSubmissions = await Submission.find({
+      verdict: { $in: ['Pending', 'Processing'] },
+      createdAt: { $lt: staleThreshold }
+    });
+
+    for (const sub of staleSubmissions) {
+      console.warn(`[Watchdog] Found stale submission ${sub._id} in state '${sub.verdict}'. Marking as System Error.`);
+      sub.verdict = 'System Error';
+      sub.runOutputs = [{
+        input: '',
+        expected: '',
+        output: '',
+        stderr: 'System Error: Submission processing timed out or worker crashed.'
+      }];
+      await sub.save();
+      
+      // Publish real-time socket update
+      await redisClient.publish('submission_updates', JSON.stringify({
+        userId: sub.userId,
+        submissionId: sub._id,
+        problemId: sub.problemId,
+        verdict: 'System Error',
+        testCasesPassedCount: 0,
+        executionTime: 0,
+        memoryUsed: 0,
+        isRunOnly: sub.isRunOnly,
+        runOutputs: sub.runOutputs,
+        ratingDelta: 0
+      }));
+    }
+  } catch (err) {
+    console.error('[Watchdog] Error running stale-job check:', err);
+  }
+}, 60 * 1000);
 
 startWorker();

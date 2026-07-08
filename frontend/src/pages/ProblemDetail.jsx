@@ -37,11 +37,25 @@ const ProblemDetail = ({ theme }) => {
     dispatch(fetchProblemById(id));
     dispatch(clearCurrentSubmission());
     setActionType(null);
-    setCodes({
-      'C++': '',
-      'Java': '',
-      'Python': ''
-    });
+
+    const storedDraft = localStorage.getItem(`codemastery-draft:${id}`);
+    if (storedDraft) {
+      try {
+        setCodes(JSON.parse(storedDraft));
+      } catch (e) {
+        setCodes({
+          'C++': '',
+          'Java': '',
+          'Python': ''
+        });
+      }
+    } else {
+      setCodes({
+        'C++': '',
+        'Java': '',
+        'Python': ''
+      });
+    }
 
     // Connect socket if user is authenticated and not connected
     if (isAuthenticated && user) {
@@ -56,6 +70,18 @@ const ProblemDetail = ({ theme }) => {
       dispatch(clearCurrentSubmission());
     };
   }, [id, dispatch, isAuthenticated, user]);
+
+  // Debounced auto-save of draft code to localStorage keyed by problem ID
+  useEffect(() => {
+    // Avoid saving empty templates on initial load
+    if (!codes['C++'] && !codes['Java'] && !codes['Python']) return;
+
+    const delayDebounceFn = setTimeout(() => {
+      localStorage.setItem(`codemastery-draft:${id}`, JSON.stringify(codes));
+    }, 500);
+
+    return () => clearTimeout(delayDebounceFn);
+  }, [codes, id]);
 
   useEffect(() => {
     // Socket listener for real-time verdict updates
@@ -104,7 +130,7 @@ const ProblemDetail = ({ theme }) => {
 
     dispatch(clearCurrentSubmission());
     setActionType('run');
-    toast.info('Run queued... waiting for sandbox evaluation.');
+    toast.info('Run initiated... executing in isolated sandbox.');
 
     const payload = {
       problemId: id,
@@ -114,12 +140,18 @@ const ProblemDetail = ({ theme }) => {
     };
 
     const result = await dispatch(runSolution(payload));
+    setActionType(null);
     if (runSolution.fulfilled.match(result)) {
-      console.log('Run queued with ID:', result.payload._id);
-      activeSubmissionIdRef.current = result.payload._id;
+      const finalPayload = result.payload;
+      if (finalPayload.verdict === 'Accepted') {
+        toast.success('Accepted! Sample test cases passed.');
+      } else if (finalPayload.verdict === 'Compilation Error') {
+        toast.error('Compilation Error! Click "Copy Log" to debug.');
+      } else {
+        toast.error(`${finalPayload.verdict || 'Evaluation failed'} on custom run.`);
+      }
     } else {
-      setActionType(null);
-      toast.error('Failed to dispatch code run action.');
+      toast.error('Failed to execute code run.');
     }
   };
 

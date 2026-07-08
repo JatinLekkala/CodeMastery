@@ -126,6 +126,7 @@ const submissionSlice = createSlice({
       })
       .addCase(runSolution.fulfilled, (state, action) => {
         state.currentSubmission = action.payload;
+        state.submitting = false;
       })
       .addCase(runSolution.rejected, (state, action) => {
         state.submitting = false;
