@@ -77,7 +77,7 @@ const callGeminiWithFallback = async (apiKey, prompt) => {
 
 exports.getCompletion = async (req, res) => {
   const { code, language, problemId } = req.body;
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = process.env.GEMINI_API_KEY ? process.env.GEMINI_API_KEY.trim() : null;
 
   if (!apiKey) {
     return res.status(400).json({ 
@@ -151,7 +151,7 @@ OUTPUT FORMAT:
 
 exports.getReview = async (req, res) => {
   const { code, language, problemId } = req.body;
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = process.env.GEMINI_API_KEY ? process.env.GEMINI_API_KEY.trim() : null;
 
   if (!apiKey) {
     return res.status(400).json({ 
