@@ -30,6 +30,10 @@ const Playground = ({ theme }) => {
   const startTimeRef = useRef(null);
   const [timeLeft, setTimeLeft] = useState(5.0);
   const [elapsedTime, setElapsedTime] = useState(null);
+  const [elapsedMs, setElapsedMs] = useState(0.000);
+  const [progressCaseIndex, setProgressCaseIndex] = useState(0);
+  const [progressTotalCases, setProgressTotalCases] = useState(0);
+  const [progressPercent, setProgressPercent] = useState(0);
 
   useEffect(() => {
     dispatch(clearCurrentSubmission());
@@ -85,6 +89,13 @@ const Playground = ({ theme }) => {
       if (activeSubmissionIdRef.current === payload.submissionId) {
         dispatch(updateSubmissionVerdict(payload));
 
+        if (timerRef.current) {
+          clearInterval(timerRef.current);
+          timerRef.current = null;
+        }
+        const finalElapsed = ((performance.now() - startTimeRef.current) / 1000).toFixed(3);
+        setElapsedTime(finalElapsed);
+
         if (payload.verdict === 'Accepted') {
           confetti({
             particleCount: 100,
@@ -100,10 +111,21 @@ const Playground = ({ theme }) => {
       }
     };
 
+    const handleSubmissionProgress = (payload) => {
+      if (activeSubmissionIdRef.current === payload.submissionId) {
+        setProgressCaseIndex(payload.currentCaseIndex);
+        setProgressTotalCases(payload.totalCasesCount);
+        const percent = payload.totalCasesCount ? Math.round((payload.currentCaseIndex / payload.totalCasesCount) * 100) : 0;
+        setProgressPercent(percent);
+      }
+    };
+
     socket.on('submission_verdict', handleSubmissionVerdict);
+    socket.on('submission_progress', handleSubmissionProgress);
 
     return () => {
       socket.off('submission_verdict', handleSubmissionVerdict);
+      socket.off('submission_progress', handleSubmissionProgress);
     };
   }, [dispatch]);
 
@@ -120,20 +142,19 @@ const Playground = ({ theme }) => {
       customInput: customInput || ''
     };
 
-    // Reset countdown and start local timer interval
-    setTimeLeft(5.0);
+    // Reset stopwatch and progress states
     setElapsedTime(null);
-    startTimeRef.current = Date.now();
+    setElapsedMs(0.000);
+    setProgressCaseIndex(0);
+    setProgressTotalCases(0);
+    setProgressPercent(0);
+    startTimeRef.current = performance.now();
     
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
-      const elapsed = (Date.now() - startTimeRef.current) / 1000;
-      const remaining = Math.max(0, 5.0 - elapsed);
-      setTimeLeft(parseFloat(remaining.toFixed(1)));
-      if (remaining <= 0) {
-        clearInterval(timerRef.current);
-      }
-    }, 100);
+      const elapsed = (performance.now() - startTimeRef.current) / 1000;
+      setElapsedMs(elapsed);
+    }, 37);
 
     const result = await dispatch(runSolution(payload));
 
@@ -142,7 +163,7 @@ const Playground = ({ theme }) => {
       clearInterval(timerRef.current);
       timerRef.current = null;
     }
-    const finalElapsed = ((Date.now() - startTimeRef.current) / 1000).toFixed(2);
+    const finalElapsed = ((performance.now() - startTimeRef.current) / 1000).toFixed(3);
     setElapsedTime(finalElapsed);
 
     if (runSolution.fulfilled.match(result)) {
@@ -247,7 +268,7 @@ const Playground = ({ theme }) => {
                   {submitting ? (
                     <>
                       <div className="spinner" style={{ width: '16px', height: '16px', borderTopColor: '#fff' }}></div>
-                      <span>Running ({timeLeft.toFixed(1)}s remaining)...</span>
+                      <span>Running ({elapsedMs.toFixed(3)}s)...</span>
                     </>
                   ) : (
                     <>
@@ -256,6 +277,42 @@ const Playground = ({ theme }) => {
                     </>
                   )}
                 </button>
+
+                {submitting && (
+                  <div 
+                    className="glass-panel" 
+                    style={{ 
+                      marginTop: '1rem', 
+                      padding: '0.8rem 1rem', 
+                      display: 'flex', 
+                      flexDirection: 'column', 
+                      gap: '0.5rem', 
+                      border: '1px solid var(--border)', 
+                      borderRadius: 'var(--radius-sm)', 
+                      background: 'var(--run-case-bg)' 
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', fontWeight: 600 }}>
+                      <span style={{ color: 'var(--text-secondary)' }}>Executing sandbox run...</span>
+                      <span style={{ color: 'var(--primary)', fontFamily: 'var(--font-mono)' }}>Evaluating...</span>
+                    </div>
+                    <div style={{ height: '6px', background: 'rgba(255,255,255,0.05)', borderRadius: '3px', overflow: 'hidden' }}>
+                      <div 
+                        style={{ 
+                          height: '100%', 
+                          width: '20%', 
+                          background: 'var(--primary)', 
+                          borderRadius: '3px', 
+                          transition: 'width 0.25s ease-out'
+                        }} 
+                      />
+                    </div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.78rem', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
+                      <span>Stopwatch</span>
+                      <span>{elapsedMs.toFixed(3)}s</span>
+                    </div>
+                  </div>
+                )}
 
                 <VerdictDisplay submission={currentSubmission} />
               </div>

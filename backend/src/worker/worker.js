@@ -340,6 +340,16 @@ const evaluateSubmission = async (submissionId) => {
         passedCount++;
       }
 
+      // Publish live progress update to Redis
+      await redisClient.publish('submission_progress', JSON.stringify({
+        userId: submission.userId.toString(),
+        submissionId: submission._id.toString(),
+        currentCaseIndex: i + 1,
+        totalCasesCount: testCases.length,
+        passedCount: passedCount,
+        verdict: tcVerdict
+      }));
+
       if (submission.isRunOnly || tcVerdict !== 'Accepted') {
         runOutputs.push({
           input: tc.input,

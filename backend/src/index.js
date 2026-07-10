@@ -92,13 +92,13 @@ io.on('connection', (socket) => {
   });
 });
 
-// Setup Redis Pub/Sub for Real-time Verdict Updates
+// Setup Redis Pub/Sub for Real-time Verdict Updates and Live Progress
 const subClient = createRedisClient();
-subClient.subscribe('submission_updates', (err, count) => {
+subClient.subscribe('submission_updates', 'submission_progress', (err, count) => {
   if (err) {
-    console.error('Failed to subscribe to Redis submission_updates channel:', err);
+    console.error('Failed to subscribe to Redis channels:', err);
   } else {
-    console.log(`Subscribed to Redis submission_updates channel. Listening on ${count} channel(s).`);
+    console.log(`Subscribed to Redis channels. Listening on ${count} channel(s).`);
   }
 });
 
@@ -106,12 +106,20 @@ subClient.on('message', (channel, message) => {
   if (channel === 'submission_updates') {
     try {
       const payload = JSON.parse(message);
-      const { userId, submissionId, verdict, testCasesPassedCount, executionTime, memoryUsed } = payload;
-      
+      const { userId, submissionId } = payload;
       console.log(`Relaying verdict event for submission ${submissionId} to user room ${userId}`);
       io.to(userId.toString()).emit('submission_verdict', payload);
     } catch (err) {
       console.error('Failed to parse Pub/Sub message:', err);
+    }
+  } else if (channel === 'submission_progress') {
+    try {
+      const payload = JSON.parse(message);
+      const { userId, submissionId } = payload;
+      // Relaying progress update to user room
+      io.to(userId.toString()).emit('submission_progress', payload);
+    } catch (err) {
+      console.error('Failed to parse progress message:', err);
     }
   }
 });
