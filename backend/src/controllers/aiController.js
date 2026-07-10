@@ -58,18 +58,25 @@ const callGemini = (apiKey, model, prompt) => {
 };
 
 const callGeminiWithFallback = async (apiKey, prompt) => {
-  try {
-    console.log('[AI] Attempting call with gemini-3.5-flash...');
-    return await callGemini(apiKey, 'gemini-3.5-flash', prompt);
-  } catch (err) {
-    console.warn(`[AI] gemini-3.5-flash failed: ${err.message}. Falling back to gemini-1.5-pro...`);
+  const models = [
+    'gemini-3.5-pro',
+    'gemini-3.5-flash',
+    'gemini-2.5-pro',
+    'gemini-2.5-flash',
+    'gemini-1.5-pro',
+    'gemini-1.5-flash'
+  ];
+
+  for (const model of models) {
     try {
-      return await callGemini(apiKey, 'gemini-1.5-pro', prompt);
-    } catch (err2) {
-      console.warn(`[AI] gemini-1.5-pro failed: ${err2.message}. Falling back to gemini-1.5-flash...`);
-      return await callGemini(apiKey, 'gemini-1.5-flash', prompt);
+      console.log(`[AI] Attempting call with model: ${model}...`);
+      return await callGemini(apiKey, model, prompt);
+    } catch (err) {
+      console.warn(`[AI] Model ${model} failed: ${err.message}. Trying next fallback...`);
     }
   }
+
+  throw new Error('All Gemini API models in the fallback pipeline failed. Please check your API key and network connection.');
 };
 
 exports.getCompletion = async (req, res) => {
