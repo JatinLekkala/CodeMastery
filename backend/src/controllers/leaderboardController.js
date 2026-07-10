@@ -17,7 +17,7 @@ exports.getLeaderboard = async (req, res) => {
 
     // 2. Cache miss - query MongoDB
     console.log('Leaderboard cache miss - querying MongoDB');
-    const leaderboard = await User.find()
+    const leaderboard = await User.find({ role: { $ne: 'Admin' } })
       .sort({ totalProblemsSolved: -1, rating: -1 })
       .limit(50)
       .select('fullName email totalProblemsAttempted totalProblemsSolved rating createdAt');

@@ -115,6 +115,8 @@ const Register = () => {
                 style={{ paddingLeft: '38px' }}
                 value={formData.dateOfBirth}
                 onChange={handleChange}
+                max={new Date().toISOString().split('T')[0]}
+                min="1900-01-01"
                 required
               />
             </div>

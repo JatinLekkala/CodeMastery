@@ -26,6 +26,11 @@ const Playground = ({ theme }) => {
   const activeSubmissionIdRef = useRef(null);
   const currentCode = codes[language];
 
+  const timerRef = useRef(null);
+  const startTimeRef = useRef(null);
+  const [timeLeft, setTimeLeft] = useState(5.0);
+  const [elapsedTime, setElapsedTime] = useState(null);
+
   useEffect(() => {
     dispatch(clearCurrentSubmission());
 
@@ -58,6 +63,7 @@ const Playground = ({ theme }) => {
 
     return () => {
       dispatch(clearCurrentSubmission());
+      if (timerRef.current) clearInterval(timerRef.current);
     };
   }, [dispatch, isAuthenticated, user]);
 
@@ -114,7 +120,31 @@ const Playground = ({ theme }) => {
       customInput: customInput || ''
     };
 
+    // Reset countdown and start local timer interval
+    setTimeLeft(5.0);
+    setElapsedTime(null);
+    startTimeRef.current = Date.now();
+    
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => {
+      const elapsed = (Date.now() - startTimeRef.current) / 1000;
+      const remaining = Math.max(0, 5.0 - elapsed);
+      setTimeLeft(parseFloat(remaining.toFixed(1)));
+      if (remaining <= 0) {
+        clearInterval(timerRef.current);
+      }
+    }, 100);
+
     const result = await dispatch(runSolution(payload));
+
+    // Clear timer and calculate final elapsed execution time
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+    const finalElapsed = ((Date.now() - startTimeRef.current) / 1000).toFixed(2);
+    setElapsedTime(finalElapsed);
+
     if (runSolution.fulfilled.match(result)) {
       const finalPayload = result.payload;
       if (finalPayload.verdict === 'Accepted') {
@@ -217,12 +247,12 @@ const Playground = ({ theme }) => {
                   {submitting ? (
                     <>
                       <div className="spinner" style={{ width: '16px', height: '16px', borderTopColor: '#fff' }}></div>
-                      <span>Running execution...</span>
+                      <span>Running ({timeLeft.toFixed(1)}s remaining)...</span>
                     </>
                   ) : (
                     <>
                       <PlayCircle size={16} />
-                      <span>Run Playground Code</span>
+                      <span>Run Playground Code {elapsedTime ? `(last run: ${elapsedTime}s)` : ''}</span>
                     </>
                   )}
                 </button>

@@ -14,7 +14,22 @@ router.post(
     body('email', 'Please include a valid email').isEmail(),
     body('password', 'Please enter a password with 6 or more characters').isLength({ min: 6 }),
     body('fullName', 'Full name is required').notEmpty(),
-    body('dateOfBirth', 'Please include a valid date of birth').isISO8601(),
+    body('dateOfBirth')
+      .isISO8601()
+      .withMessage('Please include a valid date of birth')
+      .custom((value) => {
+        const dob = new Date(value);
+        const today = new Date();
+        if (dob >= today) {
+          throw new Error('Date of birth cannot be in the future');
+        }
+        const minDate = new Date();
+        minDate.setFullYear(today.getFullYear() - 120);
+        if (dob < minDate) {
+          throw new Error('Age cannot exceed 120 years');
+        }
+        return true;
+      }),
     validate,
   ],
   authController.register
