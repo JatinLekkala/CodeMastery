@@ -165,6 +165,7 @@ const ProblemDetail = ({ theme }) => {
     if (aiLoading) return;
     setAiLoading(true);
     setAiError('');
+    setAiResponse('');
     try {
       const res = await api.post('/ai/complete', {
         code: currentCode,
@@ -172,11 +173,8 @@ const ProblemDetail = ({ theme }) => {
         problemId: id
       });
       if (res.data && res.data.completedCode) {
-        setCodes(prev => ({
-          ...prev,
-          [language]: res.data.completedCode
-        }));
-        toast.success('AI Code Completion applied! 🎉');
+        setAiResponse(res.data.completedCode);
+        toast.success('AI Code Suggestions generated! 🎉');
       }
     } catch (err) {
       setAiError(err.response?.data?.message || 'Failed to complete code.');
